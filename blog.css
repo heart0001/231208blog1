@@ -7,7 +7,7 @@
 /* 主体内容 样式 */
 .wrap{
     width:100%;
-    background: url(https://img-blog.csdnimg.cn/direct/8fe2898af60c4417a3a2395757cc146e.jpeg) no-repeat center;
+   background: url(images/background.jpg) no-repeat center;
     background-attachment:fixed;
     background-size: cover;
     overflow-x: hidden;
