@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Blog</title>
+    <link rel="stylesheet" href="blog.css">
+</head>
+
+<body>
+    <div class="menu-buttons">
+        <a href="index.html">My Resume</a>
+        <a href="blog.html">My Blog</a>
+    </div>
+    <div class="wrap">
+        <div class="logo">
+            <img src="" alt="" class="cartoon_0">
+        </div>
+        <div class="banner">
+            <div class="desc">
+                <div class="name">
+                    <h1>Sports</h1><br>
+                    <div class="line"></div><br>
+                    <p>Health | Passion | Confidence</p><br>
+                </div>
+                <p>Keep everything you love close, that is the meaning of effort.
+                </p>
+            </div>
+        </div>
+        <div class="content">
+            <ul class="box">
+                <li>
+                    <img src="https://img-blog.csdnimg.cn/direct/c47071de41bb44fbb628dbad2c9428c2.jpeg" alt="">
+                    <div class="text">
+                        Exciting Moments 
+                    </div>
+                </li>
+                <li>
+                    <img src="https://img-blog.csdnimg.cn/direct/d0b2146e8bb84c51991013142ac2b873.jpeg" alt="">
+                </li>
+                <li>
+                    <img src="https://img-blog.csdnimg.cn/direct/f5bc3246266a44f4b49153cbe0fd4ab4.jpeg" alt="">
+                </li>
+                <li>
+                    <img src="https://img-blog.csdnimg.cn/direct/eb2de25bfef24c7db317850656fcc8a5.jpeg" alt="">
+                </li>
+                <li>
+                    <img src="https://img-blog.csdnimg.cn/direct/38927e609a27430e8629284273cc0fba.jpeg" alt="">
+                </li>
+                <li>
+                    <img src="https://img-blog.csdnimg.cn/direct/fde41a817b184fcdb3a2054770f95abf.jpeg" alt="">
+                </li>
+            </ul>
+        </div>
+        <div class="message">
+            <div class="message_content">
+
+                <div class="left">
+                    <div class="ta">
+                        <textarea class="text" name="text" id="text" cols="100" rows="100"
+                            placeholder="Leave us a message!"></textarea>
+                    </div>
+                    <div class="anniu">
+                        <button class="btn" name="btn">Publish</button>
+                        <button id="delete">Delete</button>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="right-con">
+                        <ul id="ul" class="ul">
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="footer" class="mycolor">
+            <p>Like what you see? </p><br>
+            <p>Then give us a call and we'll chat through what</p><br>
+            <p>you need. We've got tea, coffee, and biscuits!</p><br>
+        </div>
+    </div>
+    <script>
+        var btn = document.querySelector('button');
+        var text = document.querySelector('textarea');
+        var ul = document.getElementById('ul');
+        btn.onclick = function () {
+            if (text.value == '') {
+                alert('You haven\'t entered any content');
+                return false;
+            }
+            else {
+                var li = document.createElement('li');
+                li.innerHTML = text.value;
+                ul.insertBefore(li, ul.children[0]);
+            }
+        }
+        var btnt = document.getElementById('delete');
+        btnt.onclick = function () {
+            if (ul.children.length == 0) {
+                this.disabled = true;
+            }
+            else {
+                ul.removeChild(ul.children[0]);
+            }
+        }
+    </script>
+</body>
+
+</html>

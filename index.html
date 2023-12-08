@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Resume</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+        }
+
+        .menu-buttons {
+            position: absolute;
+            top: 5%;
+            right: 30px;
+            transform: translateY(-50%);
+            display: flex;
+            align-items: center;
+        }
+
+        .menu-buttons a {
+            padding: 5px;
+            border-radius: 5px;
+            padding: 8px 15px;
+            background-color: #555;
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            font-weight: bold;
+            transition: color 0.3s ease-in-out;
+        }
+
+        .menu-buttons a:hover {
+            color: #ffc107; /* Set the color when the button is hovered */
+        }
+
+        .logo {
+            margin-right: 20px;
+        }
+
+        section {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        p {
+            line-height: 1.6;
+            color: #555;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        .skills {
+            margin-top: 20px;
+        }
+
+        .avatar {
+            display: block;
+            margin: 20px auto;
+            border-radius: 50%;
+        }
+
+        /* Media Queries for Responsive Design */
+        @media screen and (max-width: 600px) {
+            .menu-buttons {
+                position: static;
+                text-align: center;
+                margin-top: 20px;
+            }
+            .menu-buttons a {
+                display: block;
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="https://img-blog.csdnimg.cn/direct/3e3da6d5d37a4f988097947f96f43ed2.jpeg" alt="Avatar" class="avatar" width="150">
+        </div>
+        <div>
+            <h1>YuGuangHao</h1>
+            <p>Web Development Engineer</p>
+        </div>
+        <div class="menu-buttons">
+            <a href="index.html">My Resume</a>
+            <a href="blog.html">My Blog</a>
+        </div>
+    </header>
+
+    <section>
+        <h2>Contact Information</h2>
+        <ul>
+            <li><strong>Email:</strong>  920513176@qq.com  </li>
+            <li><strong>Phone:</strong> 17712504885 </li>
+            <li><strong>LinkedIn:</strong> linkedin.com/in/johndoe</li>
+            <li><strong>GitHub:</strong> github.com/johndoe</li>
+        </ul>
+    </section>
+
+
+ <section>
+    <h2>My Learning</h2>
+    <ul>
+        <li><strong>Foundational Knowledge:</strong> Studied fundamental concepts in computer science, including data structures, algorithms, operating systems, and computer networks.</li>
+        <li><strong>Hands-on Practice:</strong> Deepened understanding through hands-on practice, including coding exercises and participation in projects.</li>
+        <li><strong>Courses and Training:</strong> Enrolled in relevant courses and training programs to acquire in-depth knowledge and skills.</li>
+        <li><strong>Community Engagement:</strong> Joined the computer science community to engage with fellow students and professionals, sharing experiences and insights.</li>
+        <li><strong>Read Relevant Books and Literature:</strong> Stayed updated by reading relevant books and literature to understand the latest technologies and trends.</li>
+        <li><strong>Participated in Competitions and Projects:</strong> Engaged in computer science competitions and projects to enhance skills and gain practical experience.</li>
+        <li><strong>Continuous Learning:</strong> Recognized the dynamic nature of computer science and committed to continuous learning and knowledge updates.</li>
+    </ul>
+</section>
+    
+    <section class="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>HTML5, CSS3, JavaScript</li>
+            <li>React, Angular</li>
+            <li>Node.js, Express.js</li>
+            <li>Database Management (MySQL, MongoDB)</li>
+            <li>Version Control (Git)</li>
+        </ul>
+    </section>
+    
+    <section>
+        <h2>Project Experience</h2>
+        <p><strong>Personal Blog Website</strong></p>
+        <p>Developed a personal blog website, including article publishing and commenting features. Technologies used: Node.js, Express.js, MongoDB.</p>
+    
+        <p><strong>Online Task Management Application</strong></p>
+        <p>Designed and implemented a task management application supporting user creation, editing, and deletion of tasks. Technologies used: React, Redux.</p>
+    </section>
+</body>
+
+</html>
